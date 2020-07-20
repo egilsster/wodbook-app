@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD54335524C61DEE00177CD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54335424C61DEE00177CD0 /* AppDelegate.swift */; };
+		CD54335724C61DEE00177CD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54335624C61DEE00177CD0 /* SceneDelegate.swift */; };
+		CD54335924C61DEE00177CD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54335824C61DEE00177CD0 /* ContentView.swift */; };
+		CD54335B24C61DEE00177CD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD54335A24C61DEE00177CD0 /* Assets.xcassets */; };
+		CD54335E24C61DEE00177CD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD54335D24C61DEE00177CD0 /* Preview Assets.xcassets */; };
+		CD54336124C61DEE00177CD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54335F24C61DEE00177CD0 /* LaunchScreen.storyboard */; };
+		CD54336C24C61DEE00177CD0 /* wodbook_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54336B24C61DEE00177CD0 /* wodbook_appTests.swift */; };
+		CD54337724C61DEE00177CD0 /* wodbook_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54337624C61DEE00177CD0 /* wodbook_appUITests.swift */; };
+		CD54338524C61EF000177CD0 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CD54338424C61EF000177CD0 /* .swiftlint.yml */; };
+		CD54338724C61F1200177CD0 /* .swiftformat in Resources */ = {isa = PBXBuildFile; fileRef = CD54338624C61F1200177CD0 /* .swiftformat */; };
+		CD54338924C61F2A00177CD0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CD54338824C61F2A00177CD0 /* README.md */; };
+		CD54339124C6207500177CD0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54339024C6207500177CD0 /* LoginView.swift */; };
+		CD54339324C622F400177CD0 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54339224C622F400177CD0 /* RegisterView.swift */; };
+		CD54339624C6249400177CD0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CD54339524C6249400177CD0 /* Alamofire */; };
+		CD54339924C624B100177CD0 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CD54339824C624B100177CD0 /* SwiftyJSON */; };
+		CD54339D24C6252800177CD0 /* MovementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54339C24C6252800177CD0 /* MovementView.swift */; };
+		CD54339F24C6255100177CD0 /* MovementRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54339E24C6255100177CD0 /* MovementRow.swift */; };
+		CD5433A124C6256400177CD0 /* MovementDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433A024C6256400177CD0 /* MovementDetail.swift */; };
+		CD5433A324C6257400177CD0 /* MovementScoreRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433A224C6257400177CD0 /* MovementScoreRow.swift */; };
+		CD5433A524C6258100177CD0 /* MovementScoreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433A424C6258100177CD0 /* MovementScoreDetail.swift */; };
+		CD5433A724C6259000177CD0 /* CreateMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433A624C6259000177CD0 /* CreateMovement.swift */; };
+		CD5433AA24C625BA00177CD0 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433A924C625BA00177CD0 /* WorkoutView.swift */; };
+		CD5433AC24C625C700177CD0 /* WorkoutRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433AB24C625C700177CD0 /* WorkoutRow.swift */; };
+		CD5433AE24C625CD00177CD0 /* WorkoutDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433AD24C625CD00177CD0 /* WorkoutDetail.swift */; };
+		CD5433B024C625D800177CD0 /* WorkoutScoreRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433AF24C625D800177CD0 /* WorkoutScoreRow.swift */; };
+		CD5433B224C625E000177CD0 /* WorkoutScoreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433B124C625E000177CD0 /* WorkoutScoreDetail.swift */; };
+		CD5433B424C625F100177CD0 /* CreateWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433B324C625F100177CD0 /* CreateWorkout.swift */; };
+		CD5433B624C6263600177CD0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433B524C6263600177CD0 /* ProfileView.swift */; };
+		CD5433B824C6263F00177CD0 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433B724C6263F00177CD0 /* ImageLoader.swift */; };
+		CD5433BA24C6264600177CD0 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433B924C6264600177CD0 /* AsyncImage.swift */; };
+		CD5433BC24C6264D00177CD0 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433BB24C6264D00177CD0 /* ImageCache.swift */; };
+		CD5433BE24C6265800177CD0 /* EnvironmentValues+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433BD24C6265800177CD0 /* EnvironmentValues+ImageCache.swift */; };
+		CD5433C224C626B300177CD0 /* MovementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433C124C626B300177CD0 /* MovementModel.swift */; };
+		CD5433C424C626BA00177CD0 /* MovementAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433C324C626BA00177CD0 /* MovementAPI.swift */; };
+		CD5433CB24C626E100177CD0 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433CA24C626E100177CD0 /* AccountModel.swift */; };
+		CD5433CD24C626E900177CD0 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433CC24C626E900177CD0 /* AccountAPI.swift */; };
+		CD5433D024C6272500177CD0 /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433CF24C6272500177CD0 /* WorkoutModel.swift */; };
+		CD5433D224C6272B00177CD0 /* WorkoutAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433D124C6272B00177CD0 /* WorkoutAPI.swift */; };
+		CD5433D424C6273300177CD0 /* WorkoutScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433D324C6273300177CD0 /* WorkoutScoreModel.swift */; };
+		CD5433D724C6279600177CD0 /* WodbookAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433D624C6279600177CD0 /* WodbookAPI.swift */; };
+		CD5433D924C627B700177CD0 /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433D824C627B700177CD0 /* GlobalState.swift */; };
+		CD5433DB24C627C500177CD0 /* DateToFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433DA24C627C500177CD0 /* DateToFormat.swift */; };
+		CD5433DD24C627D200177CD0 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433DC24C627D200177CD0 /* SearchBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD54336824C61DEE00177CD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD54334924C61DEE00177CD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD54335024C61DEE00177CD0;
+			remoteInfo = "wodbook-app";
+		};
+		CD54337324C61DEE00177CD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD54334924C61DEE00177CD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD54335024C61DEE00177CD0;
+			remoteInfo = "wodbook-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD54335124C61DEE00177CD0 /* Wodbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wodbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD54335424C61DEE00177CD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD54335624C61DEE00177CD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD54335824C61DEE00177CD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD54335A24C61DEE00177CD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD54335D24C61DEE00177CD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD54336024C61DEE00177CD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD54336224C61DEE00177CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD54336724C61DEE00177CD0 /* wodbook-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wodbook-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD54336B24C61DEE00177CD0 /* wodbook_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wodbook_appTests.swift; sourceTree = "<group>"; };
+		CD54336D24C61DEE00177CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD54337224C61DEE00177CD0 /* wodbook-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wodbook-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD54337624C61DEE00177CD0 /* wodbook_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wodbook_appUITests.swift; sourceTree = "<group>"; };
+		CD54337824C61DEE00177CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD54338424C61EF000177CD0 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		CD54338624C61F1200177CD0 /* .swiftformat */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
+		CD54338824C61F2A00177CD0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CD54339024C6207500177CD0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CD54339224C622F400177CD0 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		CD54339C24C6252800177CD0 /* MovementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementView.swift; sourceTree = "<group>"; };
+		CD54339E24C6255100177CD0 /* MovementRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementRow.swift; sourceTree = "<group>"; };
+		CD5433A024C6256400177CD0 /* MovementDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementDetail.swift; sourceTree = "<group>"; };
+		CD5433A224C6257400177CD0 /* MovementScoreRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementScoreRow.swift; sourceTree = "<group>"; };
+		CD5433A424C6258100177CD0 /* MovementScoreDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementScoreDetail.swift; sourceTree = "<group>"; };
+		CD5433A624C6259000177CD0 /* CreateMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMovement.swift; sourceTree = "<group>"; };
+		CD5433A924C625BA00177CD0 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		CD5433AB24C625C700177CD0 /* WorkoutRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRow.swift; sourceTree = "<group>"; };
+		CD5433AD24C625CD00177CD0 /* WorkoutDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetail.swift; sourceTree = "<group>"; };
+		CD5433AF24C625D800177CD0 /* WorkoutScoreRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutScoreRow.swift; sourceTree = "<group>"; };
+		CD5433B124C625E000177CD0 /* WorkoutScoreDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutScoreDetail.swift; sourceTree = "<group>"; };
+		CD5433B324C625F100177CD0 /* CreateWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkout.swift; sourceTree = "<group>"; };
+		CD5433B524C6263600177CD0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CD5433B724C6263F00177CD0 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		CD5433B924C6264600177CD0 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		CD5433BB24C6264D00177CD0 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		CD5433BD24C6265800177CD0 /* EnvironmentValues+ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+ImageCache.swift"; sourceTree = "<group>"; };
+		CD5433C124C626B300177CD0 /* MovementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementModel.swift; sourceTree = "<group>"; };
+		CD5433C324C626BA00177CD0 /* MovementAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementAPI.swift; sourceTree = "<group>"; };
+		CD5433CA24C626E100177CD0 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		CD5433CC24C626E900177CD0 /* AccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPI.swift; sourceTree = "<group>"; };
+		CD5433CF24C6272500177CD0 /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
+		CD5433D124C6272B00177CD0 /* WorkoutAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutAPI.swift; sourceTree = "<group>"; };
+		CD5433D324C6273300177CD0 /* WorkoutScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutScoreModel.swift; sourceTree = "<group>"; };
+		CD5433D624C6279600177CD0 /* WodbookAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodbookAPI.swift; sourceTree = "<group>"; };
+		CD5433D824C627B700177CD0 /* GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
+		CD5433DA24C627C500177CD0 /* DateToFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateToFormat.swift; sourceTree = "<group>"; };
+		CD5433DC24C627D200177CD0 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD54334E24C61DEE00177CD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD54339924C624B100177CD0 /* SwiftyJSON in Frameworks */,
+				CD54339624C6249400177CD0 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD54336424C61DEE00177CD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD54336F24C61DEE00177CD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD54334824C61DEE00177CD0 = {
+			isa = PBXGroup;
+			children = (
+				CD54335324C61DEE00177CD0 /* wodbook-app */,
+				CD54336A24C61DEE00177CD0 /* wodbook-appTests */,
+				CD54337524C61DEE00177CD0 /* wodbook-appUITests */,
+				CD54335224C61DEE00177CD0 /* Products */,
+				CD54338424C61EF000177CD0 /* .swiftlint.yml */,
+				CD54338624C61F1200177CD0 /* .swiftformat */,
+				CD54338824C61F2A00177CD0 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		CD54335224C61DEE00177CD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD54335124C61DEE00177CD0 /* Wodbook.app */,
+				CD54336724C61DEE00177CD0 /* wodbook-appTests.xctest */,
+				CD54337224C61DEE00177CD0 /* wodbook-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD54335324C61DEE00177CD0 /* wodbook-app */ = {
+			isa = PBXGroup;
+			children = (
+				CD54338E24C6204800177CD0 /* View */,
+				CD5433D524C6278D00177CD0 /* Common */,
+				CD5433BF24C6269400177CD0 /* Model */,
+				CD54335424C61DEE00177CD0 /* AppDelegate.swift */,
+				CD54335624C61DEE00177CD0 /* SceneDelegate.swift */,
+				CD54335824C61DEE00177CD0 /* ContentView.swift */,
+				CD54335A24C61DEE00177CD0 /* Assets.xcassets */,
+				CD54335F24C61DEE00177CD0 /* LaunchScreen.storyboard */,
+				CD54336224C61DEE00177CD0 /* Info.plist */,
+				CD54335C24C61DEE00177CD0 /* Preview Content */,
+			);
+			path = "wodbook-app";
+			sourceTree = "<group>";
+		};
+		CD54335C24C61DEE00177CD0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD54335D24C61DEE00177CD0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD54336A24C61DEE00177CD0 /* wodbook-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD54336B24C61DEE00177CD0 /* wodbook_appTests.swift */,
+				CD54336D24C61DEE00177CD0 /* Info.plist */,
+			);
+			path = "wodbook-appTests";
+			sourceTree = "<group>";
+		};
+		CD54337524C61DEE00177CD0 /* wodbook-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD54337624C61DEE00177CD0 /* wodbook_appUITests.swift */,
+				CD54337824C61DEE00177CD0 /* Info.plist */,
+			);
+			path = "wodbook-appUITests";
+			sourceTree = "<group>";
+		};
+		CD54338E24C6204800177CD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD54338F24C6206500177CD0 /* Account */,
+				CD54339A24C6251200177CD0 /* Movements */,
+				CD5433A824C6259F00177CD0 /* Workouts */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD54338F24C6206500177CD0 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				CD54339024C6207500177CD0 /* LoginView.swift */,
+				CD54339224C622F400177CD0 /* RegisterView.swift */,
+				CD5433B524C6263600177CD0 /* ProfileView.swift */,
+				CD5433B724C6263F00177CD0 /* ImageLoader.swift */,
+				CD5433B924C6264600177CD0 /* AsyncImage.swift */,
+				CD5433BB24C6264D00177CD0 /* ImageCache.swift */,
+				CD5433BD24C6265800177CD0 /* EnvironmentValues+ImageCache.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		CD54339A24C6251200177CD0 /* Movements */ = {
+			isa = PBXGroup;
+			children = (
+				CD54339C24C6252800177CD0 /* MovementView.swift */,
+				CD54339E24C6255100177CD0 /* MovementRow.swift */,
+				CD5433A024C6256400177CD0 /* MovementDetail.swift */,
+				CD5433A224C6257400177CD0 /* MovementScoreRow.swift */,
+				CD5433A424C6258100177CD0 /* MovementScoreDetail.swift */,
+				CD5433A624C6259000177CD0 /* CreateMovement.swift */,
+			);
+			path = Movements;
+			sourceTree = "<group>";
+		};
+		CD5433A824C6259F00177CD0 /* Workouts */ = {
+			isa = PBXGroup;
+			children = (
+				CD5433A924C625BA00177CD0 /* WorkoutView.swift */,
+				CD5433AB24C625C700177CD0 /* WorkoutRow.swift */,
+				CD5433AD24C625CD00177CD0 /* WorkoutDetail.swift */,
+				CD5433AF24C625D800177CD0 /* WorkoutScoreRow.swift */,
+				CD5433B124C625E000177CD0 /* WorkoutScoreDetail.swift */,
+				CD5433B324C625F100177CD0 /* CreateWorkout.swift */,
+			);
+			path = Workouts;
+			sourceTree = "<group>";
+		};
+		CD5433BF24C6269400177CD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD5433C024C626A700177CD0 /* Movement */,
+				CD5433C724C626CA00177CD0 /* Account */,
+				CD5433CE24C6270600177CD0 /* Workout */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD5433C024C626A700177CD0 /* Movement */ = {
+			isa = PBXGroup;
+			children = (
+				CD5433C124C626B300177CD0 /* MovementModel.swift */,
+				CD5433C324C626BA00177CD0 /* MovementAPI.swift */,
+			);
+			path = Movement;
+			sourceTree = "<group>";
+		};
+		CD5433C724C626CA00177CD0 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				CD5433CA24C626E100177CD0 /* AccountModel.swift */,
+				CD5433CC24C626E900177CD0 /* AccountAPI.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		CD5433CE24C6270600177CD0 /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				CD5433CF24C6272500177CD0 /* WorkoutModel.swift */,
+				CD5433D124C6272B00177CD0 /* WorkoutAPI.swift */,
+				CD5433D324C6273300177CD0 /* WorkoutScoreModel.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		CD5433D524C6278D00177CD0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CD5433D624C6279600177CD0 /* WodbookAPI.swift */,
+				CD5433D824C627B700177CD0 /* GlobalState.swift */,
+				CD5433DA24C627C500177CD0 /* DateToFormat.swift */,
+				CD5433DC24C627D200177CD0 /* SearchBar.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD54335024C61DEE00177CD0 /* wodbook-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD54337B24C61DEE00177CD0 /* Build configuration list for PBXNativeTarget "wodbook-app" */;
+			buildPhases = (
+				CD54334D24C61DEE00177CD0 /* Sources */,
+				CD54334E24C61DEE00177CD0 /* Frameworks */,
+				CD54334F24C61DEE00177CD0 /* Resources */,
+				CD21B27024C62CCF008B5C34 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wodbook-app";
+			packageProductDependencies = (
+				CD54339524C6249400177CD0 /* Alamofire */,
+				CD54339824C624B100177CD0 /* SwiftyJSON */,
+			);
+			productName = "wodbook-app";
+			productReference = CD54335124C61DEE00177CD0 /* Wodbook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD54336624C61DEE00177CD0 /* wodbook-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD54337E24C61DEE00177CD0 /* Build configuration list for PBXNativeTarget "wodbook-appTests" */;
+			buildPhases = (
+				CD54336324C61DEE00177CD0 /* Sources */,
+				CD54336424C61DEE00177CD0 /* Frameworks */,
+				CD54336524C61DEE00177CD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD54336924C61DEE00177CD0 /* PBXTargetDependency */,
+			);
+			name = "wodbook-appTests";
+			productName = "wodbook-appTests";
+			productReference = CD54336724C61DEE00177CD0 /* wodbook-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD54337124C61DEE00177CD0 /* wodbook-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD54338124C61DEE00177CD0 /* Build configuration list for PBXNativeTarget "wodbook-appUITests" */;
+			buildPhases = (
+				CD54336E24C61DEE00177CD0 /* Sources */,
+				CD54336F24C61DEE00177CD0 /* Frameworks */,
+				CD54337024C61DEE00177CD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD54337424C61DEE00177CD0 /* PBXTargetDependency */,
+			);
+			name = "wodbook-appUITests";
+			productName = "wodbook-appUITests";
+			productReference = CD54337224C61DEE00177CD0 /* wodbook-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD54334924C61DEE00177CD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Egill;
+				TargetAttributes = {
+					CD54335024C61DEE00177CD0 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					CD54336624C61DEE00177CD0 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = CD54335024C61DEE00177CD0;
+					};
+					CD54337124C61DEE00177CD0 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = CD54335024C61DEE00177CD0;
+					};
+				};
+			};
+			buildConfigurationList = CD54334C24C61DEE00177CD0 /* Build configuration list for PBXProject "wodbook-app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD54334824C61DEE00177CD0;
+			packageReferences = (
+				CD54339424C6249400177CD0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CD54339724C624B100177CD0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = CD54335224C61DEE00177CD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD54335024C61DEE00177CD0 /* wodbook-app */,
+				CD54336624C61DEE00177CD0 /* wodbook-appTests */,
+				CD54337124C61DEE00177CD0 /* wodbook-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD54334F24C61DEE00177CD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD54338924C61F2A00177CD0 /* README.md in Resources */,
+				CD54338724C61F1200177CD0 /* .swiftformat in Resources */,
+				CD54338524C61EF000177CD0 /* .swiftlint.yml in Resources */,
+				CD54336124C61DEE00177CD0 /* LaunchScreen.storyboard in Resources */,
+				CD54335E24C61DEE00177CD0 /* Preview Assets.xcassets in Resources */,
+				CD54335B24C61DEE00177CD0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD54336524C61DEE00177CD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD54337024C61DEE00177CD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD21B27024C62CCF008B5C34 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD54334D24C61DEE00177CD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5433BA24C6264600177CD0 /* AsyncImage.swift in Sources */,
+				CD5433B424C625F100177CD0 /* CreateWorkout.swift in Sources */,
+				CD5433AE24C625CD00177CD0 /* WorkoutDetail.swift in Sources */,
+				CD5433D224C6272B00177CD0 /* WorkoutAPI.swift in Sources */,
+				CD5433A524C6258100177CD0 /* MovementScoreDetail.swift in Sources */,
+				CD5433B024C625D800177CD0 /* WorkoutScoreRow.swift in Sources */,
+				CD5433CB24C626E100177CD0 /* AccountModel.swift in Sources */,
+				CD54335524C61DEE00177CD0 /* AppDelegate.swift in Sources */,
+				CD54339324C622F400177CD0 /* RegisterView.swift in Sources */,
+				CD5433A324C6257400177CD0 /* MovementScoreRow.swift in Sources */,
+				CD54335724C61DEE00177CD0 /* SceneDelegate.swift in Sources */,
+				CD54339D24C6252800177CD0 /* MovementView.swift in Sources */,
+				CD5433B824C6263F00177CD0 /* ImageLoader.swift in Sources */,
+				CD5433CD24C626E900177CD0 /* AccountAPI.swift in Sources */,
+				CD5433A724C6259000177CD0 /* CreateMovement.swift in Sources */,
+				CD5433BC24C6264D00177CD0 /* ImageCache.swift in Sources */,
+				CD5433B624C6263600177CD0 /* ProfileView.swift in Sources */,
+				CD5433D024C6272500177CD0 /* WorkoutModel.swift in Sources */,
+				CD54339F24C6255100177CD0 /* MovementRow.swift in Sources */,
+				CD5433D424C6273300177CD0 /* WorkoutScoreModel.swift in Sources */,
+				CD5433DD24C627D200177CD0 /* SearchBar.swift in Sources */,
+				CD5433D924C627B700177CD0 /* GlobalState.swift in Sources */,
+				CD5433A124C6256400177CD0 /* MovementDetail.swift in Sources */,
+				CD54339124C6207500177CD0 /* LoginView.swift in Sources */,
+				CD5433DB24C627C500177CD0 /* DateToFormat.swift in Sources */,
+				CD5433C424C626BA00177CD0 /* MovementAPI.swift in Sources */,
+				CD5433AC24C625C700177CD0 /* WorkoutRow.swift in Sources */,
+				CD5433C224C626B300177CD0 /* MovementModel.swift in Sources */,
+				CD5433B224C625E000177CD0 /* WorkoutScoreDetail.swift in Sources */,
+				CD5433AA24C625BA00177CD0 /* WorkoutView.swift in Sources */,
+				CD5433BE24C6265800177CD0 /* EnvironmentValues+ImageCache.swift in Sources */,
+				CD5433D724C6279600177CD0 /* WodbookAPI.swift in Sources */,
+				CD54335924C61DEE00177CD0 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD54336324C61DEE00177CD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD54336C24C61DEE00177CD0 /* wodbook_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD54336E24C61DEE00177CD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD54337724C61DEE00177CD0 /* wodbook_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD54336924C61DEE00177CD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD54335024C61DEE00177CD0 /* wodbook-app */;
+			targetProxy = CD54336824C61DEE00177CD0 /* PBXContainerItemProxy */;
+		};
+		CD54337424C61DEE00177CD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD54335024C61DEE00177CD0 /* wodbook-app */;
+			targetProxy = CD54337324C61DEE00177CD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD54335F24C61DEE00177CD0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD54336024C61DEE00177CD0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD54337924C61DEE00177CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD54337A24C61DEE00177CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD54337C24C61DEE00177CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"wodbook-app/Preview Content\"";
+				DEVELOPMENT_TEAM = ZAX28G95HV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "wodbook-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "club.wodbook.wodbook-app";
+				PRODUCT_NAME = Wodbook;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD54337D24C61DEE00177CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"wodbook-app/Preview Content\"";
+				DEVELOPMENT_TEAM = ZAX28G95HV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "wodbook-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "club.wodbook.wodbook-app";
+				PRODUCT_NAME = Wodbook;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD54337F24C61DEE00177CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZAX28G95HV;
+				INFOPLIST_FILE = "wodbook-appTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "club.wodbook.wodbook-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wodbook-app.app/wodbook-app";
+			};
+			name = Debug;
+		};
+		CD54338024C61DEE00177CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZAX28G95HV;
+				INFOPLIST_FILE = "wodbook-appTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "club.wodbook.wodbook-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wodbook-app.app/wodbook-app";
+			};
+			name = Release;
+		};
+		CD54338224C61DEE00177CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZAX28G95HV;
+				INFOPLIST_FILE = "wodbook-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "club.wodbook.wodbook-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "wodbook-app";
+			};
+			name = Debug;
+		};
+		CD54338324C61DEE00177CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZAX28G95HV;
+				INFOPLIST_FILE = "wodbook-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "club.wodbook.wodbook-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "wodbook-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD54334C24C61DEE00177CD0 /* Build configuration list for PBXProject "wodbook-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD54337924C61DEE00177CD0 /* Debug */,
+				CD54337A24C61DEE00177CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD54337B24C61DEE00177CD0 /* Build configuration list for PBXNativeTarget "wodbook-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD54337C24C61DEE00177CD0 /* Debug */,
+				CD54337D24C61DEE00177CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD54337E24C61DEE00177CD0 /* Build configuration list for PBXNativeTarget "wodbook-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD54337F24C61DEE00177CD0 /* Debug */,
+				CD54338024C61DEE00177CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD54338124C61DEE00177CD0 /* Build configuration list for PBXNativeTarget "wodbook-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD54338224C61DEE00177CD0 /* Debug */,
+				CD54338324C61DEE00177CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD54339424C6249400177CD0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.1;
+			};
+		};
+		CD54339724C624B100177CD0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD54339524C6249400177CD0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD54339424C6249400177CD0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CD54339824C624B100177CD0 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD54339724C624B100177CD0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CD54334924C61DEE00177CD0 /* Project object */;
+}
