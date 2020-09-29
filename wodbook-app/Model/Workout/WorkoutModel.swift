@@ -11,6 +11,7 @@ struct Workout: Codable, Hashable {
   var name: String
   var measurement: String
   var description: String
+  var is_public: Bool
   var created_at: String
   var updated_at: String
 }

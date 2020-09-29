@@ -10,6 +10,7 @@ import SwiftUI
 
 struct WorkoutDetail: View {
   @EnvironmentObject private var globalState: GlobalState
+  @State private var showModal: Bool = false
   @State var workout: Workout
   @State private var scores: [WorkoutScore] = []
 
@@ -28,25 +29,27 @@ struct WorkoutDetail: View {
     }
   }
 
-  var body: some View {
-    VStack(alignment: .leading) {
-      HStack {
-        Image(systemName: "doc.append")
-          .foregroundColor(.red)
-          .font(.title)
-          .padding(.trailing, 10)
-        Text(workout.name)
-          .bold()
-        Text(workout.measurement)
-          .italic()
-      }
-      Divider()
-      Text(workout.description)
-      Spacer()
+  var createScore: some View {
+    Button(action: {
+      self.showModal.toggle()
+    }, label: {
+      Image(systemName: "plus.circle")
+        .imageScale(.large)
+        })
+  }
 
-      if self.scores.count > 0 {
-        HStack {
-          List {
+  var body: some View {
+    List {
+      Group {
+        Section {
+          Text("For " + workout.measurement).italic()
+          Text(workout.description)
+        }
+
+        Section(header: Text("Scores").font(.headline)) {
+          if scores.count == 0 {
+            Text("No scores logged").disabled(true)
+          } else {
             ForEach(self.scores, id: \.self) { score in
               NavigationLink(destination: WorkoutScoreDetail(workout: self.workout, score: score)) {
                 WorkoutScoreRow(score: score)
@@ -54,22 +57,27 @@ struct WorkoutDetail: View {
             }
           }
         }
-      } else {
-        Text("No scores yet..").italic()
       }
-    }.onAppear {
+    }
+    .listStyle(GroupedListStyle())
+    .environment(\.horizontalSizeClass, .regular)
+    .navigationBarTitle(Text(workout.name))
+    .navigationBarItems(trailing: createScore)
+    .onAppear {
       if self.globalState.accessToken != "" {
         self.getWorkoutScores()
       }
-    }
-    .navigationBarTitle(Text("Details"))
-    .padding()
+    }.sheet(isPresented: $showModal, onDismiss: {
+      self.getWorkoutScores()
+    }, content: {
+      CreateWorkoutScore(workout: self.workout)
+    })
   }
 }
 
 struct WorkoutDetail_Previews: PreviewProvider {
   static var previews: some View {
-    WorkoutDetail(workout: Workout(workout_id: "1", name: "Angie", measurement: "time", description: "Description...", created_at: "2020-04-06T07:00:00.000", updated_at: "2020-04-06T07:00:00.000"))
+    WorkoutDetail(workout: Workout(workout_id: "1", name: "Angie", measurement: "time", description: "Description...", is_public: true, created_at: "2020-08-17T13:48:41.565949+00:00", updated_at: "2020-08-17T13:48:41.565949+00:00"))
       .environmentObject(GlobalState())
   }
 }

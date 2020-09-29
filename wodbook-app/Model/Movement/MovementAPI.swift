@@ -22,4 +22,8 @@ struct MovementAPI {
   static func getMovementScores(_ movementId: String, _ parameters: Parameters?, completion: @escaping (Result<JSON>) -> Void) {
     RequestAPI.call("v1/movements/" + movementId, method: .get, parameters: parameters, completion: completion)
   }
+
+  static func createScore(_ movementId: String, _ parameters: Parameters?, completion: @escaping (Result<JSON>) -> Void) {
+    RequestAPI.call("v1/movements/" + movementId, method: .post, parameters: parameters, completion: completion)
+  }
 }

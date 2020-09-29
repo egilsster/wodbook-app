@@ -31,8 +31,6 @@ struct RegisterView: View {
 
   var body: some View {
     VStack {
-      Image(systemName: "person.crop.circle.badge.plus")
-        .font(.largeTitle)
       Text("REGISTER")
         .bold()
         .font(.largeTitle)

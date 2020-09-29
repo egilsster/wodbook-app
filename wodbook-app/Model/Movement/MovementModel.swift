@@ -10,6 +10,7 @@ struct Movement: Codable, Hashable {
   var movement_id: String
   var name: String
   var measurement: String
+  var is_public: Bool
   var created_at: String
   var updated_at: String
 }
@@ -33,7 +34,6 @@ struct MovementScore: Codable, Hashable {
   var score: String
   var reps: Int
   var sets: Int
-  var distance: String
   var notes: String
   var created_at: String
   var updated_at: String

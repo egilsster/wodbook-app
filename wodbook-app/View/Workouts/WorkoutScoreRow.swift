@@ -12,23 +12,17 @@ struct WorkoutScoreRow: View {
   var score: WorkoutScore
 
   var body: some View {
-    HStack {
-      Image(systemName: "doc.append")
-        .foregroundColor(.red)
-        .font(.title)
-        .padding(.trailing, 10)
-      VStack(alignment: .leading) {
-        HStack {
-          Text(score.score)
-            .bold()
-            .lineLimit(1)
-        }
-        Text(score.rx ? "rx" : "")
-          .font(.caption)
-          .lineLimit(2)
+    VStack(alignment: .leading) {
+      HStack {
+        Text(score.score).bold()
+        Text("(" + (score.rx ? "Rx" : "Scaled") + ")")
+
+        Spacer()
+
+        Text(RelativeDate(score.created_at))
       }
     }
-    .frame(height: 70)
+    .frame(height: 52)
   }
 }
 

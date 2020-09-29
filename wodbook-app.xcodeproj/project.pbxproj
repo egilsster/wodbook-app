@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD0B9A0D24EBB8B900A13387 /* UserHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B9A0C24EBB8B900A13387 /* UserHeader.swift */; };
+		CD0B9A0F24EBBCEB00A13387 /* AthleteStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B9A0E24EBBCEB00A13387 /* AthleteStats.swift */; };
+		CD150A2424EAEFF0009A2582 /* SwiftlySearch in Frameworks */ = {isa = PBXBuildFile; productRef = CD150A2324EAEFF0009A2582 /* SwiftlySearch */; };
+		CD1F898024EADC680071201C /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = CD1F897F24EADC680071201C /* SwiftDate */; };
+		CD2DDF5724EC1D4D00D23368 /* ScoreListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DDF5624EC1D4D00D23368 /* ScoreListView.swift */; };
+		CD2DDF5924EC237B00D23368 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DDF5824EC237B00D23368 /* Constants.swift */; };
+		CD2DDF5B24EC25E900D23368 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DDF5A24EC25E900D23368 /* Avatar.swift */; };
 		CD54335524C61DEE00177CD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54335424C61DEE00177CD0 /* AppDelegate.swift */; };
 		CD54335724C61DEE00177CD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54335624C61DEE00177CD0 /* SceneDelegate.swift */; };
 		CD54335924C61DEE00177CD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54335824C61DEE00177CD0 /* ContentView.swift */; };
@@ -35,10 +42,6 @@
 		CD5433B224C625E000177CD0 /* WorkoutScoreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433B124C625E000177CD0 /* WorkoutScoreDetail.swift */; };
 		CD5433B424C625F100177CD0 /* CreateWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433B324C625F100177CD0 /* CreateWorkout.swift */; };
 		CD5433B624C6263600177CD0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433B524C6263600177CD0 /* ProfileView.swift */; };
-		CD5433B824C6263F00177CD0 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433B724C6263F00177CD0 /* ImageLoader.swift */; };
-		CD5433BA24C6264600177CD0 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433B924C6264600177CD0 /* AsyncImage.swift */; };
-		CD5433BC24C6264D00177CD0 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433BB24C6264D00177CD0 /* ImageCache.swift */; };
-		CD5433BE24C6265800177CD0 /* EnvironmentValues+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433BD24C6265800177CD0 /* EnvironmentValues+ImageCache.swift */; };
 		CD5433C224C626B300177CD0 /* MovementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433C124C626B300177CD0 /* MovementModel.swift */; };
 		CD5433C424C626BA00177CD0 /* MovementAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433C324C626BA00177CD0 /* MovementAPI.swift */; };
 		CD5433CB24C626E100177CD0 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433CA24C626E100177CD0 /* AccountModel.swift */; };
@@ -48,8 +51,19 @@
 		CD5433D424C6273300177CD0 /* WorkoutScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433D324C6273300177CD0 /* WorkoutScoreModel.swift */; };
 		CD5433D724C6279600177CD0 /* WodbookAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433D624C6279600177CD0 /* WodbookAPI.swift */; };
 		CD5433D924C627B700177CD0 /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433D824C627B700177CD0 /* GlobalState.swift */; };
-		CD5433DB24C627C500177CD0 /* DateToFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433DA24C627C500177CD0 /* DateToFormat.swift */; };
-		CD5433DD24C627D200177CD0 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433DC24C627D200177CD0 /* SearchBar.swift */; };
+		CD5433DB24C627C500177CD0 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5433DA24C627C500177CD0 /* DateUtils.swift */; };
+		CD66FAE524DBF71C0035E3BE /* CaseChanging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD66FAE424DBF71C0035E3BE /* CaseChanging.swift */; };
+		CD66FAE724DC127E0035E3BE /* NewWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD66FAE624DC127E0035E3BE /* NewWorkout.swift */; };
+		CD66FAE924DC16B30035E3BE /* NewMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD66FAE824DC16B30035E3BE /* NewMovement.swift */; };
+		CD66FAEF24DC35720035E3BE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD66FAEE24DC35720035E3BE /* SettingsView.swift */; };
+		CD882CB124E7F00000EBCE04 /* CreateMovementScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD882CB024E7F00000EBCE04 /* CreateMovementScore.swift */; };
+		CD882CB324E7FCA400EBCE04 /* NewMovementScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD882CB224E7FCA400EBCE04 /* NewMovementScore.swift */; };
+		CD882CB524E8317700EBCE04 /* MovementScoreInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD882CB424E8317700EBCE04 /* MovementScoreInput.swift */; };
+		CD882CB724E83A9C00EBCE04 /* FormattedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD882CB624E83A9C00EBCE04 /* FormattedTextField.swift */; };
+		CDB5118B24EAA8F60000C4DF /* CreateWorkoutScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5118A24EAA8F60000C4DF /* CreateWorkoutScore.swift */; };
+		CDB5118D24EAAAE30000C4DF /* NewWorkoutScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5118C24EAAAE30000C4DF /* NewWorkoutScore.swift */; };
+		CDB5118F24EAABCF0000C4DF /* WorkoutScoreInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5118E24EAABCF0000C4DF /* WorkoutScoreInput.swift */; };
+		CDFCA0E824CC22D7000DBE86 /* RemoteImage in Frameworks */ = {isa = PBXBuildFile; productRef = CDFCA0E724CC22D7000DBE86 /* RemoteImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +84,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD0B9A0C24EBB8B900A13387 /* UserHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeader.swift; sourceTree = "<group>"; };
+		CD0B9A0E24EBBCEB00A13387 /* AthleteStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteStats.swift; sourceTree = "<group>"; };
+		CD2DDF5624EC1D4D00D23368 /* ScoreListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreListView.swift; sourceTree = "<group>"; };
+		CD2DDF5824EC237B00D23368 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CD2DDF5A24EC25E900D23368 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		CD54335124C61DEE00177CD0 /* Wodbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wodbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD54335424C61DEE00177CD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD54335624C61DEE00177CD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,10 +121,6 @@
 		CD5433B124C625E000177CD0 /* WorkoutScoreDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutScoreDetail.swift; sourceTree = "<group>"; };
 		CD5433B324C625F100177CD0 /* CreateWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkout.swift; sourceTree = "<group>"; };
 		CD5433B524C6263600177CD0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		CD5433B724C6263F00177CD0 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		CD5433B924C6264600177CD0 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
-		CD5433BB24C6264D00177CD0 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
-		CD5433BD24C6265800177CD0 /* EnvironmentValues+ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+ImageCache.swift"; sourceTree = "<group>"; };
 		CD5433C124C626B300177CD0 /* MovementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementModel.swift; sourceTree = "<group>"; };
 		CD5433C324C626BA00177CD0 /* MovementAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementAPI.swift; sourceTree = "<group>"; };
 		CD5433CA24C626E100177CD0 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
@@ -115,8 +130,18 @@
 		CD5433D324C6273300177CD0 /* WorkoutScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutScoreModel.swift; sourceTree = "<group>"; };
 		CD5433D624C6279600177CD0 /* WodbookAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodbookAPI.swift; sourceTree = "<group>"; };
 		CD5433D824C627B700177CD0 /* GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
-		CD5433DA24C627C500177CD0 /* DateToFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateToFormat.swift; sourceTree = "<group>"; };
-		CD5433DC24C627D200177CD0 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		CD5433DA24C627C500177CD0 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		CD66FAE424DBF71C0035E3BE /* CaseChanging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseChanging.swift; sourceTree = "<group>"; };
+		CD66FAE624DC127E0035E3BE /* NewWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkout.swift; sourceTree = "<group>"; };
+		CD66FAE824DC16B30035E3BE /* NewMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMovement.swift; sourceTree = "<group>"; };
+		CD66FAEE24DC35720035E3BE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CD882CB024E7F00000EBCE04 /* CreateMovementScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMovementScore.swift; sourceTree = "<group>"; };
+		CD882CB224E7FCA400EBCE04 /* NewMovementScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMovementScore.swift; sourceTree = "<group>"; };
+		CD882CB424E8317700EBCE04 /* MovementScoreInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementScoreInput.swift; sourceTree = "<group>"; };
+		CD882CB624E83A9C00EBCE04 /* FormattedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedTextField.swift; sourceTree = "<group>"; };
+		CDB5118A24EAA8F60000C4DF /* CreateWorkoutScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkoutScore.swift; sourceTree = "<group>"; };
+		CDB5118C24EAAAE30000C4DF /* NewWorkoutScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutScore.swift; sourceTree = "<group>"; };
+		CDB5118E24EAABCF0000C4DF /* WorkoutScoreInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutScoreInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +149,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1F898024EADC680071201C /* SwiftDate in Frameworks */,
 				CD54339924C624B100177CD0 /* SwiftyJSON in Frameworks */,
 				CD54339624C6249400177CD0 /* Alamofire in Frameworks */,
+				CD150A2424EAEFF0009A2582 /* SwiftlySearch in Frameworks */,
+				CDFCA0E824CC22D7000DBE86 /* RemoteImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +174,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD2DDF5524EC1D0E00D23368 /* ScoreList */ = {
+			isa = PBXGroup;
+			children = (
+				CD2DDF5624EC1D4D00D23368 /* ScoreListView.swift */,
+			);
+			path = ScoreList;
+			sourceTree = "<group>";
+		};
 		CD54334824C61DEE00177CD0 = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +251,8 @@
 		CD54338E24C6204800177CD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CD2DDF5524EC1D0E00D23368 /* ScoreList */,
+				CD66FAED24DC35690035E3BE /* Settings */,
 				CD54338F24C6206500177CD0 /* Account */,
 				CD54339A24C6251200177CD0 /* Movements */,
 				CD5433A824C6259F00177CD0 /* Workouts */,
@@ -228,10 +266,9 @@
 				CD54339024C6207500177CD0 /* LoginView.swift */,
 				CD54339224C622F400177CD0 /* RegisterView.swift */,
 				CD5433B524C6263600177CD0 /* ProfileView.swift */,
-				CD5433B724C6263F00177CD0 /* ImageLoader.swift */,
-				CD5433B924C6264600177CD0 /* AsyncImage.swift */,
-				CD5433BB24C6264D00177CD0 /* ImageCache.swift */,
-				CD5433BD24C6265800177CD0 /* EnvironmentValues+ImageCache.swift */,
+				CD0B9A0C24EBB8B900A13387 /* UserHeader.swift */,
+				CD0B9A0E24EBBCEB00A13387 /* AthleteStats.swift */,
+				CD2DDF5A24EC25E900D23368 /* Avatar.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -245,6 +282,10 @@
 				CD5433A224C6257400177CD0 /* MovementScoreRow.swift */,
 				CD5433A424C6258100177CD0 /* MovementScoreDetail.swift */,
 				CD5433A624C6259000177CD0 /* CreateMovement.swift */,
+				CD66FAE824DC16B30035E3BE /* NewMovement.swift */,
+				CD882CB024E7F00000EBCE04 /* CreateMovementScore.swift */,
+				CD882CB224E7FCA400EBCE04 /* NewMovementScore.swift */,
+				CD882CB424E8317700EBCE04 /* MovementScoreInput.swift */,
 			);
 			path = Movements;
 			sourceTree = "<group>";
@@ -258,6 +299,10 @@
 				CD5433AF24C625D800177CD0 /* WorkoutScoreRow.swift */,
 				CD5433B124C625E000177CD0 /* WorkoutScoreDetail.swift */,
 				CD5433B324C625F100177CD0 /* CreateWorkout.swift */,
+				CD66FAE624DC127E0035E3BE /* NewWorkout.swift */,
+				CDB5118A24EAA8F60000C4DF /* CreateWorkoutScore.swift */,
+				CDB5118C24EAAAE30000C4DF /* NewWorkoutScore.swift */,
+				CDB5118E24EAABCF0000C4DF /* WorkoutScoreInput.swift */,
 			);
 			path = Workouts;
 			sourceTree = "<group>";
@@ -305,10 +350,20 @@
 			children = (
 				CD5433D624C6279600177CD0 /* WodbookAPI.swift */,
 				CD5433D824C627B700177CD0 /* GlobalState.swift */,
-				CD5433DA24C627C500177CD0 /* DateToFormat.swift */,
-				CD5433DC24C627D200177CD0 /* SearchBar.swift */,
+				CD5433DA24C627C500177CD0 /* DateUtils.swift */,
+				CD66FAE424DBF71C0035E3BE /* CaseChanging.swift */,
+				CD882CB624E83A9C00EBCE04 /* FormattedTextField.swift */,
+				CD2DDF5824EC237B00D23368 /* Constants.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		CD66FAED24DC35690035E3BE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CD66FAEE24DC35720035E3BE /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +386,9 @@
 			packageProductDependencies = (
 				CD54339524C6249400177CD0 /* Alamofire */,
 				CD54339824C624B100177CD0 /* SwiftyJSON */,
+				CDFCA0E724CC22D7000DBE86 /* RemoteImage */,
+				CD1F897F24EADC680071201C /* SwiftDate */,
+				CD150A2324EAEFF0009A2582 /* SwiftlySearch */,
 			);
 			productName = "wodbook-app";
 			productReference = CD54335124C61DEE00177CD0 /* Wodbook.app */;
@@ -379,7 +437,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = Egill;
 				TargetAttributes = {
 					CD54335024C61DEE00177CD0 = {
@@ -407,6 +465,9 @@
 			packageReferences = (
 				CD54339424C6249400177CD0 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				CD54339724C624B100177CD0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				CDFCA0E624CC22D7000DBE86 /* XCRemoteSwiftPackageReference "RemoteImage" */,
+				CD1F897E24EADC680071201C /* XCRemoteSwiftPackageReference "SwiftDate" */,
+				CD150A2224EAEFF0009A2582 /* XCRemoteSwiftPackageReference "SwiftlySearch" */,
 			);
 			productRefGroup = CD54335224C61DEE00177CD0 /* Products */;
 			projectDirPath = "";
@@ -474,39 +535,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD5433BA24C6264600177CD0 /* AsyncImage.swift in Sources */,
 				CD5433B424C625F100177CD0 /* CreateWorkout.swift in Sources */,
+				CD66FAE924DC16B30035E3BE /* NewMovement.swift in Sources */,
 				CD5433AE24C625CD00177CD0 /* WorkoutDetail.swift in Sources */,
+				CD2DDF5B24EC25E900D23368 /* Avatar.swift in Sources */,
 				CD5433D224C6272B00177CD0 /* WorkoutAPI.swift in Sources */,
 				CD5433A524C6258100177CD0 /* MovementScoreDetail.swift in Sources */,
+				CD66FAEF24DC35720035E3BE /* SettingsView.swift in Sources */,
 				CD5433B024C625D800177CD0 /* WorkoutScoreRow.swift in Sources */,
 				CD5433CB24C626E100177CD0 /* AccountModel.swift in Sources */,
 				CD54335524C61DEE00177CD0 /* AppDelegate.swift in Sources */,
+				CDB5118D24EAAAE30000C4DF /* NewWorkoutScore.swift in Sources */,
+				CDB5118F24EAABCF0000C4DF /* WorkoutScoreInput.swift in Sources */,
+				CDB5118B24EAA8F60000C4DF /* CreateWorkoutScore.swift in Sources */,
 				CD54339324C622F400177CD0 /* RegisterView.swift in Sources */,
 				CD5433A324C6257400177CD0 /* MovementScoreRow.swift in Sources */,
 				CD54335724C61DEE00177CD0 /* SceneDelegate.swift in Sources */,
 				CD54339D24C6252800177CD0 /* MovementView.swift in Sources */,
-				CD5433B824C6263F00177CD0 /* ImageLoader.swift in Sources */,
+				CD2DDF5724EC1D4D00D23368 /* ScoreListView.swift in Sources */,
 				CD5433CD24C626E900177CD0 /* AccountAPI.swift in Sources */,
 				CD5433A724C6259000177CD0 /* CreateMovement.swift in Sources */,
-				CD5433BC24C6264D00177CD0 /* ImageCache.swift in Sources */,
 				CD5433B624C6263600177CD0 /* ProfileView.swift in Sources */,
 				CD5433D024C6272500177CD0 /* WorkoutModel.swift in Sources */,
 				CD54339F24C6255100177CD0 /* MovementRow.swift in Sources */,
+				CD66FAE524DBF71C0035E3BE /* CaseChanging.swift in Sources */,
+				CD2DDF5924EC237B00D23368 /* Constants.swift in Sources */,
 				CD5433D424C6273300177CD0 /* WorkoutScoreModel.swift in Sources */,
-				CD5433DD24C627D200177CD0 /* SearchBar.swift in Sources */,
 				CD5433D924C627B700177CD0 /* GlobalState.swift in Sources */,
 				CD5433A124C6256400177CD0 /* MovementDetail.swift in Sources */,
+				CD0B9A0F24EBBCEB00A13387 /* AthleteStats.swift in Sources */,
 				CD54339124C6207500177CD0 /* LoginView.swift in Sources */,
-				CD5433DB24C627C500177CD0 /* DateToFormat.swift in Sources */,
+				CD5433DB24C627C500177CD0 /* DateUtils.swift in Sources */,
+				CD882CB124E7F00000EBCE04 /* CreateMovementScore.swift in Sources */,
+				CD882CB324E7FCA400EBCE04 /* NewMovementScore.swift in Sources */,
 				CD5433C424C626BA00177CD0 /* MovementAPI.swift in Sources */,
 				CD5433AC24C625C700177CD0 /* WorkoutRow.swift in Sources */,
+				CD882CB524E8317700EBCE04 /* MovementScoreInput.swift in Sources */,
+				CD882CB724E83A9C00EBCE04 /* FormattedTextField.swift in Sources */,
 				CD5433C224C626B300177CD0 /* MovementModel.swift in Sources */,
+				CD66FAE724DC127E0035E3BE /* NewWorkout.swift in Sources */,
 				CD5433B224C625E000177CD0 /* WorkoutScoreDetail.swift in Sources */,
 				CD5433AA24C625BA00177CD0 /* WorkoutView.swift in Sources */,
-				CD5433BE24C6265800177CD0 /* EnvironmentValues+ImageCache.swift in Sources */,
 				CD5433D724C6279600177CD0 /* WodbookAPI.swift in Sources */,
 				CD54335924C61DEE00177CD0 /* ContentView.swift in Sources */,
+				CD0B9A0D24EBB8B900A13387 /* UserHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +651,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -639,6 +712,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -725,7 +799,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wodbook-app.app/wodbook-app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wodbook.app/Wodbook";
 			};
 			name = Debug;
 		};
@@ -747,7 +821,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wodbook-app.app/wodbook-app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wodbook.app/Wodbook";
 			};
 			name = Release;
 		};
@@ -833,6 +907,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CD150A2224EAEFF0009A2582 /* XCRemoteSwiftPackageReference "SwiftlySearch" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/thislooksfun/SwiftlySearch";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+		CD1F897E24EADC680071201C /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
 		CD54339424C6249400177CD0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -849,9 +939,27 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		CDFCA0E624CC22D7000DBE86 /* XCRemoteSwiftPackageReference "RemoteImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/crelies/RemoteImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CD150A2324EAEFF0009A2582 /* SwiftlySearch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD150A2224EAEFF0009A2582 /* XCRemoteSwiftPackageReference "SwiftlySearch" */;
+			productName = SwiftlySearch;
+		};
+		CD1F897F24EADC680071201C /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD1F897E24EADC680071201C /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
 		CD54339524C6249400177CD0 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CD54339424C6249400177CD0 /* XCRemoteSwiftPackageReference "Alamofire" */;
@@ -861,6 +969,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CD54339724C624B100177CD0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		CDFCA0E724CC22D7000DBE86 /* RemoteImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDFCA0E624CC22D7000DBE86 /* XCRemoteSwiftPackageReference "RemoteImage" */;
+			productName = RemoteImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

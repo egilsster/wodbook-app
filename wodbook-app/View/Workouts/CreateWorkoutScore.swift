@@ -1,8 +1,8 @@
 //
-//  CreateMovement.swift
+//  CreateWorkoutScore.swift
 //  wodbook-app
 //
-//  Created by Egill on 20/07/2020.
+//  Created by Egill on 17/08/2020.
 //  Copyright © 2020 Egill. All rights reserved.
 //
 
@@ -10,34 +10,32 @@ import Alamofire
 import SwiftUI
 import SwiftyJSON
 
-struct CreateMovement: View {
+struct CreateWorkoutScore: View {
   @EnvironmentObject private var globalState: GlobalState
   @Environment(\.presentationMode) private var presentation: Binding<PresentationMode>
 
-  @ObservedObject var movement = NewMovement()
+  @ObservedObject var score = NewWorkoutScore()
+
+  @State var workout: Workout
 
   var disableForm: Bool {
-    movement.name.count < 2
+    score.score.count == 0
   }
 
   var body: some View {
     NavigationView {
       VStack {
         Form {
-          Section {
-            TextField("Name", text: $movement.name)
+          WorkoutScoreInput(workout: self.workout, score: self.score)
 
-            Picker("Measurement", selection: $movement.selectedMeasurement) {
-              ForEach(0 ..< NewMovement.measurements.count, id: \.self) {
-                Text(NewMovement.measurements[$0])
-              }
-            }
+          Section(header: Text("Notes")) {
+            TextField("Notes", text: $score.notes).lineLimit(20)
           }
 
           Section {
             HStack {
               Button(action: {
-                MovementAPI.create(self.movement.getPayload()) { res in
+                WorkoutAPI.createScore(self.workout.workout_id, self.score.getPayload()) { res in
                   switch res {
                   case .success:
                     // Notify somehow
@@ -55,7 +53,7 @@ struct CreateMovement: View {
           }
           .disabled(disableForm)
         }
-      }.navigationBarTitle(Text("New Movement"), displayMode: .inline).navigationBarItems(leading:
+      }.navigationBarTitle(Text("New Workout Score"), displayMode: .inline).navigationBarItems(leading:
         Button("Cancel") {
           self.presentation.wrappedValue.dismiss()
       })
@@ -63,8 +61,8 @@ struct CreateMovement: View {
   }
 }
 
-struct CreateMovement_Previews: PreviewProvider {
+struct CreateWorkoutScore_Previews: PreviewProvider {
   static var previews: some View {
-    CreateMovement().environmentObject(GlobalState())
+    CreateWorkoutScore(workout: Workout(workout_id: "1", name: "Angie", measurement: "time", description: "Description...", is_public: true, created_at: "2020-04-06T07:00:00.000", updated_at: "2020-04-06T07:00:00.000")).environmentObject(GlobalState())
   }
 }

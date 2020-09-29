@@ -17,6 +17,12 @@ struct ContentView: View {
     }
 
     return AnyView(TabView {
+      ScoreListView()
+        .tabItem {
+          Image(systemName: "checkmark.seal")
+          Text("Scores")
+        }
+
       WorkoutView()
         .tabItem {
           Image(systemName: "list.dash")
@@ -27,12 +33,6 @@ struct ContentView: View {
         .tabItem {
           Image(systemName: "list.dash")
           Text("Movements")
-        }
-
-      ProfileView()
-        .tabItem {
-          Image(systemName: "person.crop.circle")
-          Text("Athlete")
         }
      }.environmentObject(self.globalState))
   }

@@ -29,8 +29,6 @@ struct LogInView: View {
 
   var body: some View {
     VStack {
-      Image(systemName: "link.circle")
-        .font(.largeTitle)
       Text("LOG IN")
         .bold()
         .font(.largeTitle)
@@ -47,19 +45,6 @@ struct LogInView: View {
       }.toggleStyle(SwitchToggleStyle())
 
       HStack {
-        Button(action: {
-          self.presentation.wrappedValue.dismiss()
-        }, label: {
-          HStack {
-            Image(systemName: "xmark.circle")
-            Text("Cancel")
-          }
-          .foregroundColor(Color.white)
-          .frame(width: 95, height: 32)
-          .background(Color.blue)
-          .cornerRadius(5)
-        })
-
         Button(action: {
           AccountAPI.login(self.logInFormData) { res in
             switch res {

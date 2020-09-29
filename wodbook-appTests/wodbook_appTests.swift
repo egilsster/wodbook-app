@@ -6,7 +6,7 @@
 //  Copyright © 2020 Egill. All rights reserved.
 //
 
-@testable import wodbook_app
+@testable import Wodbook
 import XCTest
 
 class WodbookAppTests: XCTestCase {

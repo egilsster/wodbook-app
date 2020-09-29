@@ -6,6 +6,7 @@
 //  Copyright © 2020 Egill. All rights reserved.
 //
 
+import SwiftlySearch
 import SwiftUI
 import SwiftyJSON
 
@@ -34,25 +35,24 @@ struct MovementView: View {
     Button(action: {
       self.showModal.toggle()
     }, label: {
-      Image(systemName: "plus")
+      Image(systemName: "plus.circle")
         .imageScale(.large)
     })
   }
 
   var body: some View {
     NavigationView {
-      VStack {
-        SearchBar(text: $searchText, placeholder: "Search")
-        List {
-          ForEach(globalState.movementList.filter {
-            $0.name.lowercased().contains(searchText.lowercased()) || searchText == ""
+      // Add filter to filter only owned movements
+      List {
+        ForEach(globalState.movementList.filter {
+          $0.name.lowercased().contains(searchText.lowercased()) || searchText == ""
           }, id: \.self) { movement in
-            NavigationLink(destination: MovementDetail(movement: movement)) {
-              MovementRow(movement: movement)
-            }
+          NavigationLink(destination: MovementDetail(movement: movement)) {
+            MovementRow(movement: movement)
           }
         }
       }
+      .navigationBarSearch(self.$searchText)
       .resignKeyboardOnDragGesture()
       .navigationBarTitle(Text("Movements"))
       .navigationBarItems(trailing: createMovement)

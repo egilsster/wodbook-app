@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "747c8db8d57b68d5e35275f10c92d55f982adbd4",
+          "version": "4.9.1"
+        }
+      },
+      {
+        "package": "RemoteImage",
+        "repositoryURL": "https://github.com/crelies/RemoteImage",
+        "state": {
+          "branch": null,
+          "revision": "2dca7774a57eaa0797cf288a98bf6ea516469b49",
+          "version": "2.0.3"
+        }
+      },
+      {
+        "package": "SwiftDate",
+        "repositoryURL": "https://github.com/malcommac/SwiftDate.git",
+        "state": {
+          "branch": null,
+          "revision": "a25913b19833860b61fac161a706e44834f03c47",
+          "version": "6.2.0"
+        }
+      },
+      {
+        "package": "SwiftlySearch",
+        "repositoryURL": "https://github.com/thislooksfun/SwiftlySearch",
+        "state": {
+          "branch": null,
+          "revision": "a9a9101e1d04ba965eb38188b5d0809a4c745fcd",
+          "version": "1.2.1"
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON",
+        "state": {
+          "branch": null,
+          "revision": "2b6054efa051565954e1d2b9da831680026cd768",
+          "version": "5.0.0"
+        }
+      },
+      {
+        "package": "ViewInspector",
+        "repositoryURL": "https://github.com/nalexn/ViewInspector.git",
+        "state": {
+          "branch": null,
+          "revision": "c7e8e1bc1e0245c2f02fcf626699390031606787",
+          "version": "0.4.10"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

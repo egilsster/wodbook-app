@@ -14,64 +14,61 @@ struct CreateWorkout: View {
   @EnvironmentObject private var globalState: GlobalState
   @Environment(\.presentationMode) private var presentation: Binding<PresentationMode>
 
-  @State private var name: String = ""
-  @State private var measurement: String = ""
-  @State private var description: String = ""
+  @ObservedObject var workout = NewWorkout()
 
-  var createWorkoutData: Parameters {
-    [
-      "name": name,
-      "measurement": measurement,
-      "description": description,
-    ]
+  var disableForm: Bool {
+    workout.name.count < 2 || workout.description.count < 5
   }
 
   var body: some View {
-    VStack {
-      Text("Create workout")
-        .bold()
-        .font(.largeTitle)
+    NavigationView {
+      VStack {
+        Form {
+          Section {
+            TextField("Name", text: $workout.name)
 
-      TextField("Name", text: $name)
-        .textFieldStyle(RoundedBorderTextFieldStyle())
-      // Select wheel
-      TextField("Measurement", text: $measurement)
-        .textFieldStyle(RoundedBorderTextFieldStyle())
-        .autocapitalization(.none)
-      TextField("Description", text: $description)
-        .textFieldStyle(RoundedBorderTextFieldStyle())
-        .lineLimit(nil)
-        .fixedSize(horizontal: false, vertical: true)
+            Picker("Measurement", selection: $workout.selectedMeasurement) {
+              ForEach(0 ..< NewWorkout.measurements.count, id: \.self) {
+                Text(NewWorkout.measurements[$0])
+              }
+            }
 
-      HStack {
-        Button(action: {
-          WorkoutAPI.create(self.createWorkoutData) { res in
-            switch res {
-            case .success:
-              // Notify somehow
-              self.presentation.wrappedValue.dismiss()
-            case let .failure(error):
-              print(error)
+            TextField("Description", text: $workout.description)
+              .lineLimit(30)
+              .fixedSize(horizontal: true, vertical: true)
+          }
+
+          Section {
+            HStack {
+              Button(action: {
+                WorkoutAPI.create(self.workout.getPayload()) { res in
+                  switch res {
+                  case .success:
+                    // Notify somehow
+                    self.presentation.wrappedValue.dismiss()
+                  case let .failure(error):
+                    print(error)
+                  }
+                }
+              }, label: {
+                HStack {
+                  Text("Create")
+                }
+                  })
             }
           }
-        }, label: {
-          HStack {
-            Image(systemName: "person.crop.circle.badge.plus")
-            Text("Submit")
-          }
-          .foregroundColor(Color.white)
-          .frame(width: 110, height: 32)
-          .background(Color.green)
-          .cornerRadius(5)
-        })
-      }
+          .disabled(disableForm)
+        }
+      }.navigationBarTitle(Text("New Workout"), displayMode: .inline).navigationBarItems(leading:
+        Button("Cancel") {
+          self.presentation.wrappedValue.dismiss()
+      })
     }
-    .padding(48)
   }
 }
 
 struct CreateWorkout_Previews: PreviewProvider {
   static var previews: some View {
-    LogInView().environmentObject(GlobalState())
+    CreateWorkout().environmentObject(GlobalState())
   }
 }

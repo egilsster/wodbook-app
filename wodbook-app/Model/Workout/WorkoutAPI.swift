@@ -22,4 +22,8 @@ struct WorkoutAPI {
   static func getWorkoutScores(_ workoutId: String, _ parameters: Parameters?, completion: @escaping (Result<JSON>) -> Void) {
     RequestAPI.call("v1/workouts/" + workoutId, method: .get, parameters: parameters, completion: completion)
   }
+
+  static func createScore(_ workoutId: String, _ parameters: Parameters?, completion: @escaping (Result<JSON>) -> Void) {
+    RequestAPI.call("v1/workouts/" + workoutId, method: .post, parameters: parameters, completion: completion)
+  }
 }

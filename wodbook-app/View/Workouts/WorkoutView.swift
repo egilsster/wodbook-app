@@ -6,6 +6,7 @@
 //  Copyright © 2020 Egill. All rights reserved.
 //
 
+import SwiftlySearch
 import SwiftUI
 import SwiftyJSON
 
@@ -35,26 +36,24 @@ struct WorkoutView: View {
     Button(action: {
       self.showModal.toggle()
     }, label: {
-      Image(systemName: "plus")
+      Image(systemName: "plus.circle")
         .imageScale(.large)
     })
   }
 
   var body: some View {
     NavigationView {
-      VStack {
-        // Causing the title not to collapse into the nav bar
-        SearchBar(text: $searchText, placeholder: "Search")
-        List {
-          ForEach(globalState.workoutList.filter {
-            $0.name.lowercased().contains(searchText.lowercased()) || searchText == ""
+      // Add filter to filter only owned movements.
+      List {
+        ForEach(globalState.workoutList.filter {
+          $0.name.lowercased().contains(searchText.lowercased()) || searchText == ""
           }, id: \.self) { workout in
-            NavigationLink(destination: WorkoutDetail(workout: workout)) {
-              WorkoutRow(workout: workout)
-            }
+          NavigationLink(destination: WorkoutDetail(workout: workout)) {
+            WorkoutRow(workout: workout)
           }
         }
       }
+      .navigationBarSearch(self.$searchText)
       .resignKeyboardOnDragGesture()
       .navigationBarTitle(Text("Workouts"))
       .navigationBarItems(trailing: createWorkout)

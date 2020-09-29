@@ -12,7 +12,7 @@ import SwiftyJSON
 
 struct RequestAPI {
   static func call(_ path: String, method: HTTPMethod, parameters: Parameters?, completion: @escaping (Result<JSON>) -> Void) {
-    let baseURL = URL(string: "https://wodbook.club")
+    let baseURL = URL(string: Constants.API_URL)
     let url = baseURL!.appendingPathComponent(path)
     let accessToken = UserDefaults.standard.string(forKey: "token") ?? ""
     let headers: HTTPHeaders = ["Authorization": "Bearer \(accessToken)"]
